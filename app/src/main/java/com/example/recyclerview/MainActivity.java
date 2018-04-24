@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         RecyclerView recyclerView = (RecyclerView)findViewById(R.id.recycler_view);
         StaggeredGridLayoutManager layoutManager = new StaggeredGridLayoutManager(3,StaggeredGridLayoutManager.VERTICAL);
         recyclerView.setLayoutManager(layoutManager);
-        FruitAdapter adapter = new FruitAdapter(fruitList);
+        FAdapter adapter = new FAdapter(fruitList);
         recyclerView.setAdapter(adapter);
     }
 
@@ -60,4 +60,5 @@ public class MainActivity extends AppCompatActivity {
         }
         return builder.toString();
     }
+
 }
